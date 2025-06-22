@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Perfil Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background: linear-gradient(to bottom, #fce4ec, #ede7f6);
+        }
+        h1, h2, h3 {
+            color: #fa3f74;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+        h1:hover, h2:hover, h3:hover {
+            transform: scale(1.05);
+        }
+        .custom-link {
+            color: #fa3f74;
+            transition: color 0.3s ease;
+        }
+        .custom-link:hover {
+            color: #ffffff;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border 0.3s ease;
+            background: #f9fafb;
+            border: 2px solid transparent;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(to right, #fa3f74, #4a00e0);
+            border: 2px solid #ffffff;
+        }
+        .highlight {
+            color: #fa3f74;
+            font-weight: 800;
+        }
+        .nav-link {
+            color: #fa3f74;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #4a00e0;
+            transform: scale(1.1);
+        }
+        nav {
+            background: linear-gradient(to right, #ffffff, #fce4ec);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .container-shadow {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            position: relative;
+        }
+        .typewriter::after {
+            content: '|';
+            color: #fa3f74;
+            animation: blink 0.7s infinite;
+            position: absolute;
+            right: -10px;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation Menu -->
+    <nav class="sticky top-0 z-50 shadow-lg py-4 px-6">
+        <ul class="flex flex-wrap justify-center gap-4 md:gap-6 text-lg font-semibold">
+            <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+            <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="max-w-4xl mx-auto p-8 bg-white rounded-xl my-12 bg-gradient-to-r from-white to-pink-50 container-shadow">
+        <!-- About Me -->
+        <div id="sobre-mi" class="mb-10 fade-in">
+            <h2 class="text-3xl font-bold flex items-center shadow-md">
+                <i class="fas fa-user-tie mr-2"></i>
+                <span class="typewriter" data-text="Sobre mí">Sobre mí</span>
+            </h2>
+            <p class="mt-3 text-gray-700">Soy Guillermo Estevez, un programador y diseñador web con más de 5 años de experiencia en el desarrollo de soluciones digitales efectivas, especializado en <span class="highlight">WordPress</span>. Mi trayectoria incluye el uso de diversos maquetadores visuales y temas de WordPress, lo que me permite ofrecer sitios web personalizados, funcionales y optimizados. Mi enfoque está centrado en crear experiencias digitales que combinen estética, funcionalidad y rendimiento, siempre alineadas con las necesidades del cliente, a los largo de mi desarrollo trabajo para diferentes agencias que tercerizan sus servicios de desarrollo & diseño web conmigo logrando plazos efectivos y reales que permiten a las agencias enfocarse unicamente en escalar su flujo de leads o clientes para su portafolio.</p>
+            <h3 class="text-2xl font-semibold mt-6 text-#fa3f74">
+                <span class="typewriter" data-text="Mi Experiencia con Maquetadores">Mi Experiencia con Maquetadores</span>
+            </h3>
+            <p class="mt-3 text-gray-700">Con más de 5 años trabajando en WordPress, he desarrollado una amplia gama de proyectos, desde sitios corporativos hasta tiendas en línea, utilizando maquetadores y temas líderes en la industria, incluyendo:</p>
+            <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
+                <li class="flex items-start"><i class="fas fa-paint-brush mr-2 text-#fa3f74"></i> <strong>Divi:</strong> Creación de sitios altamente personalizados con diseños flexibles y dinámicos, aprovechando su editor visual avanzado.</li>
+                <li class="flex items-start"><i class="fas fa-layer-group mr-2 text-#fa3f74"></i> <strong>Elementor:</strong> Desarrollo de interfaces modernas y responsivas con su potente constructor de páginas drag-and-drop.</li>
+                <li class="flex items-start"><i class="fas fa-cubes mr-2 text-#fa3f74"></i> <strong>Visual Composer:</strong> Construcción de sitios complejos con un enfoque modular y eficiente.</li>
+                <li class="flex items-start"><i class="fas fa-shapes mr-2 text-#fa3f74"></i> <strong>Bricks:</strong> Implementación de sitios optimizados para rendimiento con un constructor ligero y orientado a desarrolladores.</li>
+                <li class="flex items-start"><i class="fas fa-rocket mr-2 text-#fa3f74"></i> <strong>Astra:</strong> Creación de sitios rápidos y personalizables, ideales para proyectos que requieren velocidad y SEO.</li>
+                <li class="flex items-start"><i class="fas fa-th mr-2 text-#fa3f74"></i> <strong>Betheme:</strong> Desarrollo de sitios multipropósito con cientos de plantillas predefinidas adaptadas a necesidades específicas.</li>
+                <li class="flex items-start"><i class="fas fa-tools mr-2 text-#fa3f74"></i> <strong>Avada:</strong> Construcción de sitios robustos y versátiles con su ecosistema completo de herramientas de diseño.</li>
+            </ul>
+            <p class="mt-3 text-gray-700">Además, poseo una amplia experiencia en el desarrollo de soluciones digitales que abarcan múltiples disciplinas, lo que me permite ofrecer resultados integrales y de alto impacto. En diseño centrado en el usuario (UX/UI), En SEO técnico y de contenidos, he liderado auditorías técnicas, optimización de tiempos de carga, estructuración de datos y creación de contenido estratégico, consiguiendo mejoras de hasta 50% en rankings orgánicos para palabras clave competitivas. Mi experiencia en desarrollo de software a medida incluye la creación de intranets corporativas personalizadas que optimizan procesos internos, como gestión de documentos, comunicación interna y flujos de trabajo, implementadas para empresas en sectores como retail, salud y educación. También he desarrollado software corporativo desplegado en la nube, asegurando escalabilidad, alta disponibilidad y seguridad mediante autenticación avanzada y cifrado de datos. En optimización de rendimiento web, utilizo herramientas como WP Rocket, Cloudflare y técnicas avanzadas como compresión de imágenes, lazy loading y redes de entrega de contenido (CDN), logrando puntajes superiores al 90% en PageSpeed Insights y tiempos de carga inferiores a 2 segundos dependiendo del hosting del cliente. Además, he desarrollado sistemas de gestión de contenido personalizados que permiten a los equipos actualizar sitios sin conocimientos técnicos, y he liderado proyectos corporativos multi-industria, demostrando adaptabilidad y un enfoque orientado a resultados.</p>
+            <h3 class="text-2xl font-semibold mt-6 text-#fa3f74">
+                <span class="typewriter" data-text="Ventajas de sumarme a tu equipo">Ventajas de sumarme a tu equipo</span>
+            </h3>
+            <ul class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
+                <li class="flex items-start"><i class="fas fa-palette mr-2 text-#fa3f74"></i> <strong>Diseños únicos para tu marca:</strong> Creo sitios personalizados que reflejan la identidad de tu negocio, fortaleciendo tu presencia digital.</li>
+                <li class="flex items-start"><i class="fas fa-tachometer-alt mr-2 text-#fa3f74"></i> <strong>Optimización de alto impacto:</strong> Mejoro la velocidad y el SEO de tus proyectos, asegurando un mejor posicionamiento y experiencia de usuario.</li>
+                <li class="flex items-start"><i class="fas fa-code mr-2 text-#fa3f74"></i> <strong>Soluciones técnicas flexibles:</strong> Aporto versatilidad para implementar integraciones y funcionalidades avanzadas según tus necesidades.</li>
+                <li class="flex items-start"><i class="fas fa-life-ring mr-2 text-#fa3f74"></i> <strong>Soporte confiable:</strong> Brindo mantenimiento continuo y asistencia post-lanzamiento para garantizar el éxito a largo plazo.</li>
+                <li class="flex items-start"><i class="fas fa-users mr-2 text-#fa3f74"></i> <strong>Colaboración efectiva:</strong> Trabajo de cerca contigo, traduciendo tus objetivos en resultados digitales con entregas puntuales.</li>
+                <li class="flex items-start"><i class="fas fa-shield-alt mr-2 text-#fa3f74"></i> <strong>Proyectos seguros y escalables:</strong> Desarrollo sitios robustos con medidas de seguridad avanzadas, listos para crecer con tu negocio.</li>
+            </ul>
+            <p class="mt-3 text-gray-700">Sumarme a tu equipo significa contar con un profesional comprometido en llevar tus proyectos digitales al siguiente nivel, con soluciones innovadoras y resultados comprobados.</p>
+        </div>
+
+        <!-- Latest Projects -->
+        <div id="portafolio" class="mb-10 fade-in">
+            <h2 class="text-3xl font-bold flex items-center shadow-md">
+                <i class="fas fa-project-diagram mr-2"></i>
+                <span class="typewriter" data-text="Últimos Proyectos">Últimos Proyectos</span>
+            </h2>
+            <p class="mt-3 text-gray-700">A continuación, algunos de mis proyectos recientes que destacan mi experiencia en diseño y desarrollo web:</p>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a href="https://stsoluciones.pe/" class="project-card bg-gray-50 p-4 rounded-lg shadow-md text-center custom-link" target="_blank">ST Soluciones</a>
+                <a href="https://prisma.edu.pe/" class="project-card bg-gray-50 p-4 rounded-lg shadow-md text-center custom-link" target="_blank">Prisma</a>
+                <a href="https://spartacentromedico.pe/" class="project-card bg-gray-50 p-4 rounded-lg shadow-md text-center custom-link" target="_blank">Sparta Centro Médico</a>
+                <a href="https://gruporolso.com/" class="project-card bg-gray-50 p-4 rounded-lg shadow-md text-center custom-link" target="_blank">Grupo Rolso</a>
+                <a href="https://www.seguria.com.pe/" class="project-card bg-gray-50 p-4 rounded-lg shadow-md text-center custom-link" target="_blank">Seguria</a>
+                <a href="https://lacasadelpernochacon.com/" class="project-card bg-gray-50 p-4 rounded-lg shadow-md text-center custom-link" target="_blank">La Casa del Perro Chacón</a>
+                <a href="https://motorsmark.com/" class="project-card bg-gray-50 p-4 rounded-lg shadow-md text-center custom-link" target="_blank">Motors Mark</a>
+                <a href="https://www.tiendamaxima.com/" class="project-card bg-gray-50 p-4 rounded-lg shadow-md text-center custom-link" target="_blank">Tienda Máxima (Shopify)</a>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contacto" class="mb-10 fade-in">
+            <h2 class="text-3xl font-bold flex items-center shadow-md">
+                <i class="fas fa-envelope mr-2"></i>
+                <span class="typewriter" data-text="Contacto">Contacto</span>
+            </h2>
+            <p class="mt-3 text-gray-700"><i class="fas fa-at mr-2 text-#fa3f74"></i> Email: <a href="mailto:pwnedr00t@gmail.com" class="custom-link" target="_blank">pwnedr00t@gmail.com</a></p>
+            <p class="mt-2 text-gray-700"><i class="fas fa-phone mr-2 text-#fa3f74"></i> Teléfono / WhatsApp: <a href="https://wa.link/v48rnx" class="custom-link" target="_blank">940919009</a></p>
+            <p class="mt-2 text-gray-700"><i class="fab fa-slack mr-2 text-#fa3f74"></i> Slack: <a href="mailto:pwnedr00t@gmail.com?subject=Contacto%20vía%20Slack" class="custom-link" target="_blank">pwnedr00t@gmail.com</a></p>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center fade-in">
+            <p class="text-gray-700">Gracias por confiar en mis servicios. Estoy a disposición para cualquier consulta o ajuste.</p>
+            <p class="text-gray-700 font-bold mt-2">Quedo atento a tu confirmación para iniciar el proyecto.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript para el efecto de máquina de escribir -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const typewriters = document.querySelectorAll('.typewriter');
+            typewriters.forEach(element => {
+                const text = element.getAttribute('data-text');
+                element.textContent = '';
+                let i = 0;
+                const speed = 100; // Velocidad de escritura en ms
+                function type() {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    } else {
+                        element.style.borderRight = 'none'; // Oculta el cursor al finalizar
+                    }
+                }
+                setTimeout(type, 500); // Retraso inicial para la animación
+            });
+        });
+    </script>
+</body>
+</html>
